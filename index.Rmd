@@ -1,5 +1,5 @@
 ---
-title: "RUMENO"
+title: "RUMINO"
 output: github_document
 ---
 

@@ -1,4 +1,4 @@
-RUMENO
+RUMINO
 ================
 
 ## DaTa and gRaphic Design
