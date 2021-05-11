@@ -11,27 +11,30 @@ knitr::opts_chunk$set(echo = TRUE)
 
 RUMENO designs Graphics with your daTa
 
-## Including Code
+## Simple but PowerFull DeSign
 
-You can include R code in the document as follows:
+단순하지만 명료한 데이터 디자인 
 
-```{r cars}
-summary(cars)
+```{r, echo=FALSE, message = FALSE}
+library(ggrepel)
+library(tidyverse)
+mtcars %>%
+  ggplot(aes(disp, mpg, label = row.names(mtcars), color = as.factor(cyl))) +
+  geom_point(size = 3)+
+  geom_text_repel(size = 3, color = "black") +
+  scale_color_manual(values = c("grey20", "grey40", "grey60")) +
+  xlab("DISP, cu in") +
+  ylab("MPG, mile/gallon") +
+  labs(color = "No. of \ncylinders")+
+  theme_minimal()+
+  theme(legend.position = c(.95, .95),
+        legend.justification = c("right", "top"),
+        legend.box.just = "right",
+        legend.margin = margin(6, 6, 6, 6))
 ```
-
-## Including Plots
-
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
-
-Notion link:
+<br><br>
+DesignGallery:
 https://www.notion.so/Statistics-Data-Science-26abca862876454b8a4f213c6eada608
 2
-
 
 
