@@ -32,9 +32,6 @@ mtcars %>%
         legend.box.just = "right",
         legend.margin = margin(6, 6, 6, 6))
 ```
-<br><br>
-DesignGallery:
-https://www.notion.so/Statistics-Data-Science-26abca862876454b8a4f213c6eada608
-2
+
 
 
